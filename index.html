@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ed">
+  <meta name="description" content="Choose a Scent House website concept.">
+  <title>Scent House — Website concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f7f3ed;--ink:#251c1d;--wine:#711d36;--muted:#796d69;--line:#e2d8d1;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:var(--paper);color:var(--ink);font-family:var(--sans);display:flex;flex-direction:column}
+    .topline{height:5px;background:linear-gradient(90deg,#4f1227,#a4435b,#d5a7a1)}
+    header{width:min(1180px,calc(100% - 48px));margin:0 auto;height:88px;display:flex;align-items:center;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;color:var(--ink);text-decoration:none}.brand-logo{display:block;width:158px;height:auto}
+    
+    
+    main{width:min(1180px,calc(100% - 48px));margin:auto;flex:1;display:flex;flex-direction:column;justify-content:center;padding:76px 0 90px}
+    .intro{text-align:center;margin:0 auto 48px;max-width:720px}
+    .eyebrow{margin:0 0 14px;color:var(--wine);font-size:.67rem;letter-spacing:.21em;text-transform:uppercase;font-weight:700}
+    h1{margin:0;font:400 clamp(2.7rem,6.3vw,5.8rem)/1.02 var(--serif);letter-spacing:-.045em}
+    .intro p:last-child{margin:18px auto 0;color:var(--muted);font-size:.94rem;max-width:480px}
+    .options{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .option-card{min-height:245px;padding:34px 30px;background:#fffdfa;border:1px solid var(--line);display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;transition:transform .25s,border-color .25s,box-shadow .25s}
+    .option-card:hover{transform:translateY(-5px);border-color:#c9a8a7;box-shadow:0 18px 46px rgba(71,35,41,.08)}
+    .price-label{margin:0 0 13px;color:var(--muted);font-size:.64rem;letter-spacing:.17em;text-transform:uppercase}
+    .price{margin:0;color:var(--wine);font:400 clamp(2rem,4vw,3rem)/1 var(--serif);letter-spacing:-.03em}
+    .card-bottom{width:100%;padding-top:32px}
+    .site-button{width:100%;min-height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;background:var(--wine);color:#fffdfa;text-decoration:none;font-size:.75rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;transition:background .2s}
+    .site-button:hover,.site-button:focus-visible{background:#4f1227}
+    .site-button span{font-size:1.05rem;transition:transform .2s}
+    .site-button:hover span{transform:translate(3px,-2px)}
+    footer{width:min(1180px,calc(100% - 48px));margin:0 auto;padding:21px 0 25px;border-top:1px solid var(--line);color:var(--muted);font-size:.69rem;display:flex;justify-content:space-between;gap:15px}
+    @media(max-width:720px){header,main,footer{width:calc(100% - 36px)}main{padding:58px 0 64px}.intro{margin-bottom:30px}.options{grid-template-columns:1fr;gap:12px}.option-card{min-height:0;padding:23px 22px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:16px}.price-label{margin-bottom:8px}.card-bottom{padding:0}.site-button{min-height:50px}footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <div class="topline" aria-hidden="true"></div>
+  <header>
+    <a class="brand" href="index.html" aria-label="Scent House home"><img class="brand-logo" src="scent-house-logo.png" alt="Scent House"></a>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">A fragrance destination</p>
+      <h1>Choose your Scent House experience.</h1>
+      <p>Explore three different ways to tell the Scent House story.</p>
+    </section>
+    <section class="options" aria-label="Website concepts">
+      <article class="option-card">
+        <div><p class="price-label">Simple concept</p><p class="price">₹10,000</p></div>
+        <div class="card-bottom"><a class="site-button" href="scent-house-simple.html">Simple <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="option-card">
+        <div><p class="price-label">Medium concept</p><p class="price">₹22,000</p></div>
+        <div class="card-bottom"><a class="site-button" href="scent-house-medium.html">Medium <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="option-card">
+        <div><p class="price-label">Advanced concept</p><p class="price">₹35,000</p></div>
+        <div class="card-bottom"><a class="site-button" href="scent-house-advanced.html">Advanced <span aria-hidden="true">↗</span></a></div>
+      </article>
+    </section>
+  </main>
+  <footer><span>Scent House · Marthandam</span><span>Choose a concept to explore</span></footer>
+</body>
+</html>
